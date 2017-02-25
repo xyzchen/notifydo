@@ -1,0 +1,17 @@
+# Compiled Object files
+build
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Config file
+*.json

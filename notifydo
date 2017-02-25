@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cmd=$@
+stime=$(date +%s)
+$cmd
+etime=$(date +%s)
+passed=$(($etime - $stime))
+/usr/local/bin/notify.py -c ~/notify_config.json "在 '$PWD' 目录下执行 '$cmd' 命令已完成，共耗时{$passed}秒!"
